@@ -1,2 +1,2 @@
-# example2
-personal website v2.
+# example
+personal website

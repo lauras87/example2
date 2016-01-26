@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/agencyls.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/jPages.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
@@ -114,6 +115,8 @@
             </div>
         </div>
 
+<!--
+
         <div class="row controls">
             <div class="col-lg-12 text-center">
                 <button class="btn btn-default filter" data-filter="all">All</button>
@@ -124,52 +127,96 @@
         </div>
 
     </div>
+
+--> 
+
+<div class="holder">
+<a class="jp-previous jp-disabled">← previous</a>
+<a class="jp-current">1</a>
+<span class="jp-hidden">...</span>
+<a>2</a>
+<a>3</a>
+<a>4</a>
+<a>5</a>
+<a class="jp-hidden">6</a>
+<a class="jp-hidden">7</a>
+<a class="jp-hidden">8</a>
+<a class="jp-hidden">9</a>
+<span>...</span>
+<a>10</a>
+<a class="jp-next">next →</a>
+</div>
 <!-- ______________________ PORTFOLIO GRID SECTION ____________________________________________ -->
+<div class="container">
     <div id="containerm">
-        <ul class="photo-grid">
-            <li class="mix category-1" data-myorder="1"><a href="#">
-                <figure>
-                    <img src="img/portfolio/10-year2.jpg">
-                    <figcaption><p>NCPHLL Celebtrates 10 Years</p></figcaption>
-                </figure>
-            </li></a>
-            
-            <li class="mix category-2" data-myorder="1"><a href="#">
-                <figure>
-                    <img src="img/portfolio/DD1.jpg">
-                    <figcaption><p>Disease Detectives</p></figcaption>
-                </figure>
-            </li></a>
+        <div class="row" id="itemContainer">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" class="portfolio-link">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" class="portfolio-link">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" class="portfolio-link">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+      
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" class="portfolio-link">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" class="portfolio-link">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" class="portfolio-link">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
 
-            <li class="mix category-1" data-myorder="2"><a href="#">
-                 <figure>
-                    <img src="img/portfolio/epi.png">
-                    <figcaption><p>He Said, She Said: Lab-Epi Edition</p></figcaption>
-                </figure>
-            </li></a>
 
-            <li class="mix category-2" data-myorder="2"><a href="#">
-                <figure>
-                    <img src="img/portfolio/Kay-4.png">
-                    <figcaption><p>EID Fellows: Where are they Now?</p></figcaption>
-                </figure>
-            </li></a>
 
-            <li class="mix category-1" data-myorder="3"><a href="#">
-                <figure>
-                    <img src="img/portfolio/phil-lee.jpg">
-                    <figcaption><p>The Best Lab Job in Hawaii</p></figcaption>
-                </figure>
-            </li></a>
 
-            <li class="mix category-2" data-myorder="3"><a href="#">
-                <figure>
-                    <img src="img/portfolio/stem1.jpg">
-                    <figcaption><p>AWESOME ARTICLE</p></figcaption>
-                </figure>
-            </li></a>
-        </ul>
-    </div>
+
+
+
+
+
+    </div> <!-- close containerm-->
+</div> <!--close container--> 
 </section>
             
 
@@ -410,6 +457,18 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
+    <script src="js/jPages.js"></script>
+            <script>
+                $(function(){
+
+              $("div.holder").jPages({
+                containerID : "itemContainer"
+              });
+
+            });
+
+            </script> 
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>

@@ -129,6 +129,13 @@ button:active:focus {
     padding-bottom:100px;
 }
 
+.portfolio-link {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
 .photo-grid {
     margin: 1em auto;
     max-width: 1106px;
