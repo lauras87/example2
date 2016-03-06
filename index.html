@@ -385,6 +385,24 @@
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
+
+            <!-- hidden text to show contact form success or fail -->
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <!-- if contact is successful. -->
+                    <div id="submit-success" class="alert alert-success alert-dismissible collapse" role="alert">
+                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                     Message received! I'll be in touch.
+                    </div>
+
+                    <!-- if user encounters errors. -->
+                    <div id="submit-errors" class="alert alert-danger alert-dismissible collapse" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    It looks like there was an error submitting the form. Please try again later.
+                    </div>
+
+                </div> <!--close col -->
+            </div> <!--close row -->
             <!-- Contacts -->
 <!-- Form Area -->
                 <div class="contact-form wow fadeInUp">
@@ -452,6 +470,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
