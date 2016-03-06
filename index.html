@@ -407,25 +407,23 @@
 <!-- Form Area -->
                 <div class="contact-form wow fadeInUp">
                     <!-- Form -->
-                    <form id="contact-us" method="post" action="//formspree.io/laurasiegel10@gmail.com">
+                    <form id="contact-us" action="/" novalidate="novalidate">
                         <!-- Left Inputs -->
                         <div class="col-md-6 col-md-offset-3">
                             <!-- Name -->
-                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                            <input class="form" type="text" name="name" required="required"placeholder="Name" aria-required="true">
                             <!-- Email -->
-                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
-                            <!-- Subject -->
-                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                            <input class="form" type="email" name="_replyto" required="required" placeholder="Email" aria-required="true">
                         </div><!-- End Left Inputs -->
                         <!-- Right Inputs -->
                         <div class="col-md-6 col-md-offset-3">
                             <!-- Message -->
-                            <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                            <textarea class="form textarea" name="message" required="required"placeholder="Message" aria-required="true"></textarea>
                         </div><!-- End Right Inputs -->
                         <!-- Bottom Submit -->
                         <div class="relative fullwidth col-md-12 contbtn">
                             <!-- Send Button -->
-                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+                            <button class="form-btn semibold" type="submit" value="Send">Send Message</button> 
                         </div><!-- End Bottom Submit -->
                         <!-- Clear -->
                         <div class="clear"></div>
