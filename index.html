@@ -388,18 +388,7 @@
 
             <!-- hidden text to show contact form success or fail -->
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <!-- if contact is successful. -->
-                    <div id="submit-success" class="alert alert-success alert-dismissible collapse" role="alert">
-                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                     Message received! I'll be in touch.
-                    </div>
-
-                    <!-- if user encounters errors. -->
-                    <div id="submit-errors" class="alert alert-danger alert-dismissible collapse" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    It looks like there was an error submitting the form. Please try again later.
-                    </div>
+                
 
                 </div> <!--close col -->
             </div> <!--close row -->
@@ -407,24 +396,36 @@
 <!-- Form Area -->
                 <div class="contact-form wow fadeInUp">
                     <!-- Form -->
-                    <form id="contact-us" novalidate="novalidate">
+                    <form id="contact-form" novalidate="novalidate">
                         <!-- Left Inputs -->
                         <div class="col-md-6 col-md-offset-3">
+                            <div class="alert alert-danger center-block submit-fail display-none">Please fill in all form fields<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
+                            <div class="alert alert-success center-block submit-success display-none">Thanks for stopping to say Hello!<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
                             <!-- Name -->
-                            <input class="form" type="text" name="name" required="required"placeholder="Name" aria-required="true">
+                            <input class="form" type="text" id="inputName" name="name" required="required" placeholder="Name">
                             <!-- Email -->
-                            <input class="form" type="email" name="_replyto" required="required" placeholder="Email" aria-required="true">
+                            <input class="form" type="email" id="inputEmail" name="email" required="required" placeholder="Email">
                         </div><!-- End Left Inputs -->
                         <!-- Right Inputs -->
                         <div class="col-md-6 col-md-offset-3">
                             <!-- Message -->
-                            <textarea class="form textarea" name="message" required="required"placeholder="Message" aria-required="true"></textarea>
+                            <textarea class="form textarea" id="inputMessage" name="message" required="required" placeholder="Message"></textarea>
                         </div><!-- End Right Inputs -->
                         <!-- Bottom Submit -->
                         <div class="relative fullwidth col-md-12 contbtn">
                             <!-- Send Button -->
-                            <button class="form-btn semibold" type="button" value="Send">Send Message</button> 
-                        </div><!-- End Bottom Submit -->
+                            <button class="form-btn semibold" type="submit" value="Send">Send Message</button>
+                            </div><!-- End Bottom Submit -->
+                           <!-- hidden text to show contact form success or fail -->
+            <div class="row">
+                <div class="text-center">
+                       
+                  </div>
+
+                
+
+    
+            </div> <!--close row -->
                    
                     </form>
 
