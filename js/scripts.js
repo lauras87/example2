@@ -19,7 +19,7 @@ $(document).ready(function() {
       else {
         $.ajax({
           method: 'POST',
-          url: '//formspree.io/laurasiegel10@gmail.com.com',
+          url: '//formspree.io/laurasiegel10@gmail.com',
           data: $('#contact-form').serialize(),
           datatype: 'json'
         });
