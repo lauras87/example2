@@ -1224,6 +1224,10 @@ center{
   margin-top:330px;
 }
 
+.display-none {
+    display: none;
+}
+
 /* ------------- FOOTER  ---------------------------*/ 
 
 footer {
