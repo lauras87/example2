@@ -1,9 +1,37 @@
-$(function(){
 
-	// Instantiate MixItUp:
 
-	$('#containerm').mixItUp();
+  // Instantiate MixItUp:
 
+  $('#container-1').mixItUp({
+    controls: {
+      enable: true //Enable controls
+    },
+    pagination: {
+      limit: 6, //How many items per page
+      loop: false, //Endless page scrolling
+      generatePagers: true, //Generate pagination in the div
+      maxPagers: 5, 
+      pagerClass: 'btn-default',
+      prevButtonHTML: '«',
+      nextButtonHTML: '»',
+    },
+    selectors:{
+          filter: '.filter-btn',
+
+        },
+    animation: {
+    enable: false   
+  },
+  callbacks: {
+    onMixLoad: function(){
+      $(this).mixItUp('setOptions', {
+        animation: {
+          enable: true,
+          effects: 'fade', 
+        },
+      });
+    }
+  }
 });
 
 $(document).ready(function() {
