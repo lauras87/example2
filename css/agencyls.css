@@ -9,7 +9,7 @@
 }
 
 #container-1 {
-    
+    margin: 0 auto;
 }
 
 .container .pager-list .btn-default {
@@ -61,6 +61,12 @@ header {
     color: black;
     margin: 0 auto;
     display: inline-block;
+}
+
+a[tabindex]:focus {
+    color:white;
+    outline: none;
+    text-decoration: none;
 }
 
 .btn-intro {
@@ -121,7 +127,7 @@ button {
     border: none;
     background: none;
     margin-right: 15px;
-    transition: all 0.3s ease;
+    
 }
 
 button:hover 
@@ -249,6 +255,13 @@ img {
   border: 7px solid #fff;
   float: right;
 
+}
+
+@media (min-width: 300px) {
+     .bio { 
+        margin-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 /* ---------------- Section Styles  -----------------------*/
@@ -578,7 +591,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Libre Baskerville', serif; 
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -600,11 +613,10 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: 'Libre Baskerville', serif;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
-        text-transform: uppercase;
         margin-bottom: 50px;
     }
 }
