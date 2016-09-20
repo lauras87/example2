@@ -80,9 +80,8 @@ a[tabindex]:focus {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
+    font-family:'Libre Baskerville', serif;
+    font-size: 35px;
     line-height: 22px;
 }
 
@@ -96,15 +95,10 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        ;
-        ;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
         line-height: 40px;
     }
 
@@ -202,11 +196,7 @@ img {
 
 .brightness img:hover
 {
-    filter: brightness(.60);
-    -webkit-filter: brightness(.60);
-    -moz-filter: brightness(.60);
-    -o-filter: brightness(.60);
-    -ms-filter: brightness(.60);
+    background: rgba(0,0,0,0.5);
 
     webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
@@ -239,6 +229,7 @@ img {
         font-size: 20px;
         font-weight: bold;
         color: #777;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .about-head {
@@ -281,6 +272,7 @@ body {
 
 .text-muted {
     color: #777;
+    font-family:'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-primary {
@@ -290,6 +282,7 @@ body {
 p {
     font-size: 16px;
     line-height: 1.75;
+    font-family:'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p.large {
@@ -588,13 +581,6 @@ header .text-holder {
     margin-bottom: 30px;
 }
 
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
-}
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
@@ -612,9 +598,6 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
         line-height: 40px;
 
     }
@@ -694,7 +677,7 @@ padding-top: 5px;
     padding-bottom: 40px;
     padding-top: 80px;
     font-size: 40px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
