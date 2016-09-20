@@ -34,6 +34,8 @@
 }
 
 
+
+
 /* ----------------  HEADER SECTION STYLING -----------------------*/
 
 header {
@@ -158,9 +160,6 @@ button:active:focus {
     color: black;
 }
 
-.hover {
-
-}
 
 #portfolio {
     background-color: #f7f7f7;
@@ -185,18 +184,10 @@ img {
     transition: all 0.3s ease-in-out;
     } 
 
-.brightness img
-{
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
-    -moz-filter: brightness(100%);
-    -o-filter: brightness(100%);
-    -ms-filter: brightness(100%);
-}
+
 
 .brightness img:hover
 {
-    background: rgba(0,0,0,0.5);
 
     webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
