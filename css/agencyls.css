@@ -634,7 +634,7 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -1102,6 +1102,11 @@ padding-top: 5px;
 }
 
 /* ---------------------------------CONTACT  ---------------------------*/
+button, input, select, textarea {
+  font-family : Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size   : 100%;
+}
+
 section#contact {
     background-color: #f7f7f7;
 }
@@ -1207,6 +1212,7 @@ section#contact .text-danger {
     margin-bottom:25px;
     color:#727272 !important;
     font-size:13px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
