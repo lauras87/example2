@@ -83,7 +83,7 @@ a[tabindex]:focus {
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family:'Libre Baskerville', serif;
-    font-size: 35px;
+    font-size: 22px;
     line-height: 22px;
 }
 
@@ -102,6 +102,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         line-height: 40px;
+        font-size: 35px;
     }
 
     header .intro-text .intro-heading {
@@ -184,6 +185,25 @@ img {
     transition: all 0.3s ease-in-out;
     } 
 
+.darken {
+    background: black;
+    padding: 0;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;
+            
+}
 
 
 .brightness img:hover
